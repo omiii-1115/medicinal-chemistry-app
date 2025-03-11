@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  color: rgb(243 244 246 / 1);
+}
+
+body.dark-mode .bg-white {
+  background-color: rgb(31 41 55 / 1);
+  color: rgb(243 244 246 / 1);
+}
+
+body.dark-mode .text-medium {
+  color: rgb(209 213 219 / 1);
+}
+
+body.dark-mode .text-light {
+  color: rgb(156 163 175 / 1);
+}
+
+body.dark-mode .text-primary {
+  color: rgb(96 165 250 / 1);
+}
+
+body.dark-mode .text-dark {
+  color: rgb(243 244 246 / 1);
+}
+
+body.dark-mode .border-primary,
+body.dark-mode .border-cns,
+body.dark-mode .border-ans {
+  border-color: rgb(59 130 246 / 1);
+}
+
+body.dark-mode .bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, rgb(30 58 138 / 1), rgb(88 28 135 / 1));
+}
+
+body.dark-mode .bg-primary\/10 {
+  background-color: rgb(59 130 246 / 0.2);
+}
+
+body.dark-mode .bg-\[\#2563EB\]\/5,
+body.dark-mode .bg-\[\#7C3AED\]\/10,
+body.dark-mode .bg-\[\#7C3AED\]\/20 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
