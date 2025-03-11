@@ -101,3 +101,8 @@
     "bufferutil": "^4.0.8"
   }
 }
+{
+  "name": "medicinal-chemistry-app",
+  "version": "1.0.0",
+  "homepage": "https://omiii-1115.github.io/medicinal-chemistry-app/"
+}
